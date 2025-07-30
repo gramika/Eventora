@@ -1,0 +1,359 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline: auto; */
+
+}
+
+.navbar-css {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgb(238, 180, 126), white, rgb(194, 100, 13));
+    z-index: 5;
+}
+
+.img-css {
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.nav-link-css {
+    color: rgb(232, 6, 6);
+    font-family: "Cormorant Garamond", serif;
+
+}
+
+.nav-link-css:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-item-css {
+    color: rgb(184, 106, 33);
+    font-family: "Engagement", cursive;
+
+}
+
+/* modal */
+.modal-css {
+    /* background-color: rgb(217, 172, 88); */
+    background-image: linear-gradient(to bottom, rgb(238, 180, 126), white, rgb(194, 100, 13));
+
+}
+
+.modal-icon-css {
+    cursor: pointer;
+}
+
+.contact-modal-head {
+    font-family: "Libre Baskerville", serif;
+    color: orangered;
+}
+
+.contact-modal-subHead {
+    font-family: "Quicksand", sans-serif;
+    color: rgb(247, 117, 11);
+}
+
+.contact-modal-body {
+    color: chocolate;
+    font-family: "Tangerine", cursive;
+}
+
+.span-text {
+    color: rgb(222, 11, 103);
+    font-family: "Lato", sans-serif;
+}
+
+.icon-insta {
+    color: rgb(211, 69, 178);
+}
+
+.icon-fb {
+    color: blue;
+}
+
+.icon:hover {
+    background-color: rgb(231, 189, 210);
+    border-radius: 50%;
+    transform: scaleX(1.2);
+}
+
+/* home */
+.home-img {
+    width: 100%;
+    height: 650px;
+    margin-top: 130px;
+}
+
+/* .home-img:hover{
+    opacity: 30%;
+} 
+.home-text {
+  transition: transform 0.5s ease-in-out;
+}
+.home-img:hover ~.home-text{
+    transform: scaleX(1.5)
+} */
+
+.home-text{
+    margin-top: 100px;
+}
+.home-head {
+    font-family: "Almendra", serif;
+    font-size: 100px;
+    color: rgb(187, 109, 36);
+}
+
+.home-sub {
+    font-family: "Cormorant Garamond", serif;
+    color: rgb(230, 58, 10);
+
+}
+
+.home-para {
+    font-family: "Tangerine", cursive;
+    color: rgb(203, 56, 90);
+
+}
+
+/* about section */
+.about,
+.event,
+.venue,
+.form {
+    /* background-color: rgb(238, 180, 126); */
+    background-image: linear-gradient(to bottom, rgb(238, 180, 126), white, rgb(194, 100, 13));
+
+}
+
+.img-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img {
+    width: 600px;
+    margin-top: 50px;
+}
+
+.about-head,
+.event-head,
+.venue-main,
+.gallery-head {
+    color: rgb(68, 11, 108);
+    font-family: "Almendra", serif;
+
+}
+
+.about-grid-para {
+    color: rgb(211, 78, 142);
+    font-family: "Engagement", cursive;
+
+}
+
+.para-head {
+    color: rgb(222, 19, 39);
+    font-family: "Almendra", serif;
+
+}
+
+.about-grid-para-bottom {
+    color: rgb(193, 56, 138);
+    font-family: "Smythe", system-ui;
+}
+
+.brochure {
+    background-color: rgb(222, 3, 65);
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+/* event section */
+
+.event-para {
+    color: brown;
+    font-family: "Merienda", cursive;
+}
+
+.scroll-area {
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+}
+
+.card {
+    scroll-snap-type: start;
+    border-radius: 10px;
+    /* background-color: rgb(238, 180, 126); */
+    background-image: linear-gradient(to bottom, rgb(235, 118, 7), rgb(226, 206, 188));
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    width: 100%;
+    padding: 10px;
+    height: 250px;
+    border-radius: 15%;
+}
+
+.card-heading {
+    color: purple;
+    font-family: "Chewy", system-ui;
+    text-align: center;
+}
+
+.card-text {
+    color: maroon;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* venue section */
+.card-venue {
+    height: 570px;
+    padding: 5px;
+    margin: 10px;
+    border: solid 1px white;
+    /* text-align: center; */
+    /* background-color: rgb(233, 228, 224); */
+    background-image: linear-gradient(to bottom left, rgb(238, 180, 126), white, rgb(194, 100, 13));
+
+    border-radius: 10%;
+
+}
+
+.card-venue:hover {
+    transform: scaleX(1.05);
+}
+
+.card-img-top-venue {
+    width: 100%;
+    padding: 10px;
+    height: 250px;
+    border-radius: 35%;
+}
+
+.venue-head {
+    color: rgb(226, 3, 3);
+    font-family: "Engagement", cursive;
+    font-size: 30px;
+
+}
+
+.btn-css {
+    border: solid rgb(223, 7, 187) 1px;
+    background-color: rgb(215, 11, 106);
+    border-radius: 25%;
+}
+
+.btn-css:hover {
+    background-color: orangered;
+}
+
+.venue-text {
+    padding: 10px;
+    padding-bottom: 0px;
+    color: rgb(241, 10, 91);
+    font-family: "Merienda", cursive;
+    font-size: 15px;
+
+}
+
+/* form section */
+.form-head {
+    color: rgb(253, 24, 100);
+    font-family: "Poppins", sans-serif;
+}
+
+.form-para {
+    color: rgb(224, 15, 15);
+    font-family: "Playfair Display", serif;
+
+}
+
+.form-sub {
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(to bottom, white, rgb(194, 100, 13));
+
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-image: linear-gradient(to top, white, rgb(194, 100, 13));
+}
+
+.links {
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+h4 {
+    color: brown;
+    font-family: "Merriweather", serif;
+
+}
+
+.links,
+.footer-content,
+.copy {
+    color: rgb(221, 9, 44);
+    font-family: "Almendra", serif;
+
+}
+
+/* testimonials */
+.offcanvas-title {
+    color: rgb(76, 124, 4);
+    font-family: "Smythe", system-ui;
+    font-size: 30px;
+}
+
+.feedback-title {
+    color: rgb(156, 206, 80);
+}
+
+.accordion-body {
+    color: red;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+
+}
+
+.testimonials {
+    background-image: linear-gradient(to bottom, white, rgb(231, 164, 103));
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* for accessing and styling the scrollbar */
+::-webkit-scrollbar {
+    width: 1px;
+    border-radius: 10px;
+}
+
+/* track is the path through which the thumb moves.thumb is the moving part */
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(231, 164, 103);
+    border-radius: 10px;
+}

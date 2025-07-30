@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventora</title>
+    <!-- bootstrap linking -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- css linking -->
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicons linking -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- google fonts linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chewy&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Engagement&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mystery+Quest&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Righteous&family=Schoolbell&family=Smythe&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- aos linking -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate css linking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-css">
+        <div class="container-fluid">
+            <img class="img-fluid img-css ms-3 me-5" src="./assets/logo.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active nav-link-css fw-bold fs-4" aria-current="page" href="#homeId">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link nav-link-css fw-bold fs-4" href="#aboutId">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle nav-link-css fw-bold fs-4" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Birthdays</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Engagement</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Bridal Shower</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Bachelor Party</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Weddings</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Baby Shower</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Naming Ceremony</a>
+                            </li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">House Warming</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Anniversaries</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Graduation Ceremony</a>
+                            </li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Alumni meetups</a></li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Business
+                                    conferences</a>
+                            </li>
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Business Seminar</a>
+                            </li>
+
+                            <li><a class="dropdown-item dropdown-item-css fw-bold fs-4" href="#">Product Launch</a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link nav-link-css fw-bold fs-4" href="#venueId">Venues</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link nav-link-css fw-bold fs-4" href="#galleryId">Gallery</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <!-- Contact model is opened on clicking -->
+                        <a class="nav-link nav-link-css fw-bold fs-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Contact</a>
+                    </li>
+                    <!-- testimonial is given as offcanvas -->
+                    <li class="nav-item me-4">
+                        <a class="nav-link nav-link-css fw-bold fs-4" href="#" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">Testimonials</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-css">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class='bx bxs-contact fs-3'></i></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- contact content -->
+                    <h1 class="contact-modal-head text-center">CONTACT US</h1>
+                    <h3 class="contact-modal-subHead">address:</h3>
+                    <p class="contact-modal-body fs-1 p-3">Eventora Event Management Company,ABC Building,Panampally
+                        Nagar,Kochi
+                    </p>
+                    <i class='bx bxs-phone py-2  fs-3'> <span class="span-text">9874563210</span></i><br>
+                    <i class='bx bxl-gmail py-2  fs-3 mt-2'> <span class="span-text">eventora@gmail.com</span></i>
+                    <!-- social media icons -->
+                    <ul class="contact-icon-list d-flex align-items-center justify-content-center mt-2">
+                        <li class="icon-list-item list-unstyled mx-3 fs-1 p-3">
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class='bx bxl-instagram icon icon-insta'></i></a>
+
+                        </li>
+                        <li class="icon-list-item list-unstyled mx-3 fs-1 p-3">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class='bx bxl-facebook-circle icon icon-fb'></i></a>
+
+                        </li>
+                        <li class="icon-list-item list-unstyled mx-3 fs-1 p-3">
+                            <a href="https://x.com/?lang=en-in" target="_blank"><i class='bx bxl-twitter icon'></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonials-offcanvas -->
+    <div class="offcanvas offcanvas-start testimonials" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">Hear From Our Happy Clients</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion " id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button feedback-title " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Anjali & Ramesh – ⭐⭐⭐⭐⭐
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body testimonials">
+                            Eventora brought our dream wedding to life. Every detail was magical and stress-free!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed feedback-title" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Nimmy & Ashwin – ⭐⭐⭐⭐
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse feedback-title">
+                        <div class="accordion-body testimonials">
+                            We barely had to guide them — they just got what we wanted and delivered perfectly.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed feedback-title" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Shalini – ⭐⭐⭐⭐⭐
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body testimonials">
+                            My daughter's fairy-themed birthday was magical! So much creativity and care.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed feedback-title" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Shalini – ⭐⭐⭐⭐⭐
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body testimonials">
+                            My daughter's fairy-themed birthday was magical! So much creativity and care.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed feedback-title" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Vinod K. – ⭐⭐⭐⭐
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body testimonials">
+                            Our elders were really impressed. Everything followed tradition beautifully.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed feedback-title" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Radha & Suresh – ⭐⭐⭐⭐⭐
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body testimonials">
+                            Our 25th anniversary was straight out of a dream. Classy and warm!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed feedback-title" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Anitha Varghese – ⭐⭐⭐⭐
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body testimonials">
+                            The setup was nostalgic and elegant. Loved reconnecting with classmates!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <textarea class="form-control mt-4" id="exampleTextarea" rows="4"
+                placeholder="post your feedback here..."></textarea>
+            <button type="button" class="btn btn-dark text-center mt-4">post</button>
+
+
+
+        </div>
+    </div>
+    <!-- home -->
+    <div class="home position-relative" id="homeId">
+        <img class="home-img img-fluid" src="./assets/banner-5.jpg" alt="home-image">
+        <div
+            class="position-absolute top-50 start-50 translate-middle text-white home-text">
+            <h1 class="home-head text-center border border-light border-5" data-aos="fade-down">Eventora</h1>
+            <h2 class="home-sub fw-bold text-center fs-1" data-aos="fade-down">
+                Where Every Celebration Begins
+
+            </h2>
+            <p class="text-center home-para fs-1 fw-bold" data-aos="fade-down">“From Dream to Detail, We Plan It All.”
+            </p>
+        </div>
+    </div>
+    <!-- about us -->
+    <div class="container-fluid about" id="aboutId">
+        <div class="row pt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-5" data-aos="zoom-out-up">
+                <h1 class="about-head py-3 text-center">About Us</h1>
+                <p class="text-justify p-5 about-grid-para fs-2 ">Welcome to Eventora, where ideas turn into
+                    unforgettable experiences.
+
+                    At Eventora, we believe that every event — big or small — deserves to be extraordinary. Whether it's
+                    a
+                    dreamy wedding, a corporate gathering, a birthday bash, or a cultural celebration, our passion lies
+                    in
+                    crafting moments that leave a lasting impact.
+
+                    We are a creative team of event planners, designers, and coordinators based in Kerala, committed to
+                    delivering seamless, stylish, and stress-free events. From the first idea to the final applause, we
+                    walk
+                    with you every step of the way — bringing your vision to life with precision, elegance, and joy.</p>
+            </div>
+            <div class="col-md-5 img-grid">
+                <img class="img-fluid about-img p-4 text-center my-5" src="./assets/decor.jpg" alt="about-img"
+                    data-aos="fade-down">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <img class="img-fluid about-img text-center" src="./assets/home-image.png" alt="about-image-2"
+                    data-aos="fade-up">
+            </div>
+            <div class="col-md-5">
+                <p class="about-grid-para-bottom p-5 fs-4 text-center" data-aos="zoom-out-up"><span
+                        class="para-head fs-1">Why Choose
+                        Eventora?</span> <br>
+
+                    -Personalized planning tailored to your taste and budget <br>
+
+                    -A handpicked network of top venues and vendors <br>
+
+                    -Trendy designs, smooth logistics, and attention to detail <br>
+
+                    -A team that genuinely cares about making your day special <br><br><br>
+
+                    Let us handle the pressure while you enjoy the celebration. <br>
+
+                    ✨ Eventora — Curate. Celebrate. Cherish. <br><br>
+
+                    <a class="brochure p-2 mt-3" href="./assets/eventora brochure.pdf" target="_blank">view Brochure</a>
+                </p>
+
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!-- events -->
+    <!-- image slider -->
+    <div class="container" id="eventId">
+        <h1 class="event-head text-center fw-bold p-4 ">Events</h1>
+        <p class="event-para text-justify fw-semibold py-2 px-5">At Eventora, every celebration is a story waiting to be
+            told. From dreamy weddings to elegant corporate affairs, we specialize in curating unforgettable moments
+            that reflect your vision and style. Whether it's an intimate gathering or a grand celebration, we handle it
+            all — with passion, precision, and creativity."</p>
+        <div class="slider-wrapper position-relative">
+            <div class="d-flex overflow-auto gap-4 scroll-area">
+                <!-- birthday card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/birthday.png" class="card-img-top" alt="birthday">
+                    <div class="card-body">
+                        <h3 class="card-heading">BIRTHDAYS</h3>
+                        <p class="card-text">Your love story deserves a grand celebration. From timeless traditions to
+                            modern
+                            flair, Eventora turns your wedding day into a breathtaking beginning.</p>
+                    </div>
+                </div>
+                <!-- engagement card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/engagement.jpg" class="card-img-top" alt="engagement">
+                    <div class="card-body">
+                        <h3 class="card-heading">ENGAGEMENT</h3>
+                        <p class="card-text">Your love story deserves a grand celebration. From timeless traditions to
+                            modern flair, Eventora turns your wedding day into a breathtaking beginning.</p>
+                    </div>
+                </div>
+                <!-- wedding card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/wedding.png" class="card-img-top" alt="wedding-img">
+                    <div class="card-body">
+                        <h3 class="card-heading">WEDDINGS</h3>
+                        <p class="card-text">Your love story deserves a grand celebration. From timeless traditions to
+                            modern flair, Eventora turns your wedding day into a breathtaking beginning.</p>
+                    </div>
+                </div>
+                <!-- bridal shower card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/bridal.png" class="card-img-top" alt="bridal">
+                    <div class="card-body">
+                        <h3 class="card-heading">BRIDAL SHOWER</h3>
+                        <p class="card-text">Celebrate the bride-to-be with style and sparkle. Eventora creates charming
+                            and heartfelt bridal showers filled with laughter, games, and glamour.
+                        </p>
+                    </div>
+                </div>
+                <!-- bachelor party card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/bachelor.png" class="card-img-top" alt="bachelor">
+                    <div class="card-body">
+                        <h3 class="card-heading">BACHELOR PARTY</h3>
+                        <p class="card-text">One last blast before the big day! Let us craft a legendary night with epic
+                            vibes, cool themes, and everything in between — no stress, just fun.
+                        </p>
+                    </div>
+                </div>
+                <!-- baby shower card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/babyshower.png" class="card-img-top" alt="babyshower">
+                    <div class="card-body">
+                        <h3 class="card-heading">BABY SHOWER</h3>
+                        <p class="card-text">Celebrate new beginnings with warmth and wonder. From cute décor to sweet
+                            treats, Eventora makes your baby shower a bundle of joy.
+                        </p>
+                    </div>
+                </div>
+                <!-- Naming ceremony card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/naming.png" class="card-img-top" alt="naming">
+                    <div class="card-body">
+                        <h3 class="card-heading">NAMING CEREMONY</h3>
+                        <p class="card-text">A name to remember, a day to cherish. Eventora makes your baby’s naming
+                            ceremony serene, spiritual, and beautifully personal.
+                        </p>
+                    </div>
+                </div>
+                <!-- anniverasy card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/anniversary.png" class="card-img-top" alt="anniverasy">
+                    <div class="card-body">
+                        <h3 class="card-heading">ANNIVERSARIES</h3>
+                        <p class="card-text">Love that stands the test of time deserves to shine. Whether it’s your 1st
+                            or 50th, Eventora adds romance and elegance to your special day.
+                        </p>
+                    </div>
+                </div>
+                <!-- housewarming card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/housewarming.png" class="card-img-top" alt="housewarming">
+                    <div class="card-body">
+                        <h3 class="card-heading">HOUSEWARMING</h3>
+                        <p class="card-text">New walls, new vibes, new memories. We help you welcome your loved ones
+                            with a cozy and stylish housewarming event that feels like home.
+                        </p>
+                    </div>
+                </div>
+                <!-- graduation cremony card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/graduation.png" class="card-img-top" alt="graduation">
+                    <div class="card-body">
+                        <h3 class="card-heading">GRADUATION</h3>
+                        <p class="card-text">Caps off to new beginnings! Eventora adds a touch of celebration and
+                            sophistication to your proudest academic milestone.
+                        </p>
+                    </div>
+                </div>
+                <!-- ALUMNI CARD -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/alumni.png" class="card-img-top" alt="alumni">
+                    <div class="card-body">
+                        <h3 class="card-heading">ALUMNI MEETUP</h3>
+                        <p class="card-text">Reconnect, relive, and reminisce. We design alumni meetups that bridge
+                            memories and moments — where old friendships come alive again.
+                        </p>
+                    </div>
+                </div>
+                <!-- business conference card-->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/conferences.png" class="card-img-top" alt="conference-img">
+                    <div class="card-body">
+                        <h3 class="card-heading">BUSINESS CONFERENCES</h3>
+                        <p class="card-text">Professional. Precise. Powerful. Eventora ensures your business conference
+                            runs like clockwork — from seating charts to speaker panels.
+                        </p>
+                    </div>
+                </div>
+                <!-- business seminar card-->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/seminars.png" class="card-img-top" alt="seminar-img">
+                    <div class="card-body">
+                        <h3 class="card-heading">BUSINESS SEMINAR</h3>
+                        <p class="card-text">Engage your audience, impress your clients. We create focused and impactful
+                            seminar experiences with tech, timing, and tone all on point.
+                        </p>
+                    </div>
+                </div>
+                <!-- Product launch card -->
+                <div class="card flex-shrink-0" style="width: 18rem;">
+                    <img src="./assets/product-launch.png" class="card-img-top" alt="productlaunch-img">
+                    <div class="card-body">
+                        <h3 class="card-heading">PRODUCT LAUNCH</h3>
+                        <p class="card-text">Your product deserves a show-stopping debut. Eventora delivers launches
+                            that are bold, branded, and buzz-worthy from start to finish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- venues -->
+    <div class="container-fluid venue" id="venueId">
+        <h1 class="text-center fw-bold p-4 venue-main">Venues</h1>
+        <div class="row mx-5">
+            <!-- venue1 -->
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/hyath.jpg" class="card-img-top-venue" alt="Hyatt">
+                    <div class="card-body">
+                        <h5 class="card-title venue-head">Grand Hyatt Bolgatty, Kochi</h5>
+                        <p class="card-text venue-text">A jewel by the waterfront, Grand Hyatt Bolgatty blends luxury
+                            with tradition. With expansive event spaces and serene backwater views, it’s perfect for
+                            grand weddings, corporate galas, and high-profile gatherings.</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- venue 2 -->
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/taj-malabar.jpg" class="card-img-top-venue" alt="taj-malabar">
+                    <div class="card-body ">
+                        <h5 class="card-title venue-head">Taj Malabar Resort, Willingdon Island</h5>
+                        <p class="card-text venue-text">Nestled
+                            on an island, this resort offers breathtaking sunset views and exceptional hospitality —
+                            ideal for destination weddings and intimate celebrations.</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- venue 3 -->
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/hycinthh.avif" class="card-img-top-venue" alt="hycinth">
+                    <div class="card-body ">
+                        <h5 class="card-title venue-head">Hycinth Hotel, Trivandrum</h5>
+                        <p class="card-text venue-text">Sleek, stylish, and centrally located, Hycinth Hotel is made for
+                            modern events. Whether it’s a business seminar or an engagement party, the ambiance and
+                            service ensure a seamless experience.</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- venue 4 -->
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/mascot.jpg" class="card-img-top-venue" alt="hycinth">
+                    <div class="card-body ">
+                        <h5 class="card-title venue-head">Mascot Hotel, Trivandrum</h5>
+                        <p class="card-text venue-text">Step into heritage with Mascot Hotel — a century-old landmark
+                            that brings classic elegance to your event. It’s a perfect blend of old-world charm and
+                            contemporary comfort</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-5">
+            <!-- venue5 -->
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/lake-palace.jpg" class="card-img-top-venue" alt="lake-palace">
+                    <div class="card-body ">
+                        <h5 class="card-title venue-head"> Lake Palace Resort, Alappuzha</h5>
+                        <p class="card-text venue-text">Surrounded by tranquil waters, Lake Palace Resort is a dream
+                            setting for romantic and serene events. Its traditional Kerala design and backwater views
+                            create unforgettable memories.</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- venue 6 -->
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/punnamada.jpg" class="card-img-top-venue" alt="punnamada">
+                    <div class="card-body ">
+                        <h5 class="card-title venue-head">Punnamada Resort, Alappuzha</h5>
+                        <p class="card-text venue-text">Immerse your guests in the beauty of Kerala’s backwaters at
+                            Punnamada Resort. With lush gardens and wooden villas, it’s a magical choice for intimate
+                            weddings and family functions.</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- venue 7 -->
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/raviz.jpg" class="card-img-top-venue" alt="raviz">
+                    <div class="card-body ">
+                        <h5 class="card-title venue-head">The Raviz Calicut</h5>
+                        <p class="card-text venue-text">Classy and contemporary, The Raviz Calicut brings premium luxury
+                            to North Kerala. Its spacious banquet halls and stylish design make it a top pick for
+                            upscale events.</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- venue 8 -->
+            <div class="col-xl-3 col-md-6 " data-aos="zoom-in-down">
+                <div class="card-venue text-center" style="width: 18rem;">
+                    <img src="./assets/copper.jpg" class="card-img-top-venue" alt="copper-folia">
+                    <div class="card-body ">
+                        <h5 class="card-title venue-head "> Copper Folia, Calicut</h5>
+                        <p class="card-text venue-text">For cozy and chic celebrations, Copper Folia is the go-to venue.
+                            Perfect for birthdays, engagement parties, or corporate meetups, it offers boutique comfort
+                            with a personal touch.</p>
+                        <a href="#" class="btn btn-css">Get Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+    <div class="container" id="galleryId">
+        <h1 class="gallery-head text-center fw-bold p-4 ">Gallery</h1>
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active data" data-bs-interval="2000">
+                    <img src="./assets/banner-wedding.png" class="d-block w-100" alt="wedding">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p>Every detail, thoughtfully designed</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/banner-office.png" class="d-block w-100" alt="office">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p>Professional. Precise. Powerful.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/banner-baby.png" class="d-block w-100" alt="babyshower">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p>Bundles of joy and balloons</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- form section -->
+    <div class="container-fluid form" id="formId">
+        <div class="container">
+            <h1 class="text-center form-head p-5">Let’s Plan Your Perfect Event</h1>
+            <p class="form-para text-justify fs-4 px-5">Planning a special day? Just fill out the form below and our
+                team will get back to you shortly. We’re excited to bring your event to life!</p>
+            <form class="row g-3 form-sub border border-dark mt-3 p-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <label for="name-input" class="form-label me-4 text-end col-md-2">Name</label>
+                    <input type="text" class="form-control w-25 col-md-4" id="name-input">
+                </div>
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <label for="email-input" class="form-label me-4 text-end col-md-2">Email</label>
+                    <input type="email" class="form-control w-25 col-md-4" id="email-input">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <label for="mobile-input" class="form-label me-4 text-end col-md-2">Mobile</label>
+                    <input type="text" class="form-control w-25 col-md-4" id="mobile-input">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <label for="date-input" class="form-label me-4 text-end col-md-2">Date</label>
+                    <input type="date" class="form-control w-25 col-md-4" id="date-input">
+                </div>
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <label for="inputCity" class="form-label me-4 text-end col-md-2">City</label>
+                    <input type="text" class="form-control w-25 col-md-4" id="inputCity">
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <label for="inputEvent" class="form-label me-4 text-end col-md-2">Event</label>
+                    <select id="inputEvent" class="form-select w-25 col-md-4">
+                        <option selected disabled hidden>Choose...</option>
+                        <option>birthday</option>
+                        <option>Engagement</option>
+                        <option>Wedding</option>
+                        <option>bridal Shower</option>
+                        <option>Bachelor Party</option>
+                        <option>babyshower</option>
+                        <option>Naming ceremony</option>
+                        <option>housewarming</option>
+                        <option>Anniversaries</option>
+                        <option>Graduation</option>
+                        <option>Alumni meetups</option>
+                        <option>Business conference</option>
+                        <option>Business Seminar</option>
+                        <option>Product Launch</option>
+                    </select>
+                </div>
+
+
+                <div class="col-12 text-center ">
+                    <button type="submit" class="btn btn-danger mt-3">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="px-5">
+        <div class="d-md-flex align-items-center justify-content-around pt-5 pb-0">
+
+            <div class="footer-text">
+                <h4 class="quickLink">Quick links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#homeId" class="links">Home</a></li>
+                    <li><a href="#eventId" class="links">Events</a></li>
+                    <li><a href="#contactId" class="links">Contact</a></li>
+                    <li><a href="#formId" class="links">Book an Event</a></li>
+                </ul>
+            </div>
+            <div class="opening">
+                <h4 id="text1">Opening Hours</h4>
+                <p class="footer-content">Office Hours: <br>
+                    Mon–Sat: 10 AM – 6 PM <br>
+                    Sunday: Closed</p>
+            </div>
+            <div class="contact-footer">
+                <h4>Contact</h4>
+                <p class="footer-content">
+                    Phone: 9874563210 <br>
+
+                    Email: eventora@gmail.com <br>
+
+                    Address: Eventora Events, Kochi, Kerala, India</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15718.81559413308!2d76.28547899450128!3d9.958575292313824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0872c7abe6c9e7%3A0x7138a08633b8c9dd!2sPanampilly%20Nagar%2C%20Kochi%2C%20Ernakulam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1753878961515!5m2!1sen!2sin"
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p class="copy text-center">&copy;2025 Eventora.All rights Reserved </p>
+
+
+    </footer>
+
+</body>
+<!-- aos scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- aos init -->
+<script>
+    AOS.init();
+</script>
+<!-- bootstrap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
