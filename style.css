@@ -120,6 +120,13 @@
 }
 
 /* about section */
+.home,
+.about,
+.event,
+.venue,
+.form{
+    min-height: 100vh;
+}
 .about,
 .event,
 .venue,

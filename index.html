@@ -277,7 +277,7 @@
     <div class="container-fluid about" id="aboutId">
         <div class="row pt-5">
             <div class="col-md-1"></div>
-            <div class="col-md-5" data-aos="zoom-out-up">
+            <div class="col-md-5" data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom">
                 <h1 class="about-head py-3 text-center">About Us</h1>
                 <p class="text-justify p-5 about-grid-para fs-2 ">Welcome to Eventora, where ideas turn into
                     unforgettable experiences.
@@ -295,7 +295,7 @@
             </div>
             <div class="col-md-5 img-grid">
                 <img class="img-fluid about-img p-4 text-center my-5" src="./assets/decor.jpg" alt="about-img"
-                    data-aos="fade-down">
+                    data-aos="fade-down" data-aos-anchor-placement="top-bottom">
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -303,10 +303,10 @@
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <img class="img-fluid about-img text-center" src="./assets/home-image.png" alt="about-image-2"
-                    data-aos="fade-up">
+                    data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             </div>
             <div class="col-md-5">
-                <p class="about-grid-para-bottom p-5 fs-4 text-center" data-aos="zoom-out-up"><span
+                <p class="about-grid-para-bottom p-5 fs-4 text-center" data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom"><span
                         class="para-head fs-1">Why Choose
                         Eventora?</span> <br>
 
@@ -488,7 +488,7 @@
         <h1 class="text-center fw-bold p-4 venue-main">Venues</h1>
         <div class="row mx-5">
             <!-- venue1 -->
-            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/hyath.jpg" class="card-img-top-venue" alt="Hyatt">
                     <div class="card-body">
@@ -501,7 +501,7 @@
                 </div>
             </div>
             <!-- venue 2 -->
-            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down">
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/taj-malabar.jpg" class="card-img-top-venue" alt="taj-malabar">
                     <div class="card-body ">
@@ -514,7 +514,7 @@
                 </div>
             </div>
             <!-- venue 3 -->
-            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/hycinthh.avif" class="card-img-top-venue" alt="hycinth">
                     <div class="card-body ">
@@ -527,7 +527,7 @@
                 </div>
             </div>
             <!-- venue 4 -->
-            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down">
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/mascot.jpg" class="card-img-top-venue" alt="hycinth">
                     <div class="card-body ">
@@ -542,7 +542,7 @@
         </div>
         <div class="row mx-5">
             <!-- venue5 -->
-            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/lake-palace.jpg" class="card-img-top-venue" alt="lake-palace">
                     <div class="card-body ">
@@ -555,7 +555,7 @@
                 </div>
             </div>
             <!-- venue 6 -->
-            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down">
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/punnamada.jpg" class="card-img-top-venue" alt="punnamada">
                     <div class="card-body ">
@@ -568,7 +568,7 @@
                 </div>
             </div>
             <!-- venue 7 -->
-            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/raviz.jpg" class="card-img-top-venue" alt="raviz">
                     <div class="card-body ">
@@ -581,7 +581,7 @@
                 </div>
             </div>
             <!-- venue 8 -->
-            <div class="col-xl-3 col-md-6 " data-aos="zoom-in-down">
+            <div class="col-xl-3 col-md-6 " data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">
                 <div class="card-venue text-center" style="width: 18rem;">
                     <img src="./assets/copper.jpg" class="card-img-top-venue" alt="copper-folia">
                     <div class="card-body ">
@@ -745,7 +745,10 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- aos init -->
 <script>
-    AOS.init();
+    AOS.init({
+    delay: 200, // delay on animation start
+    duration: 600, // animation duration
+  });
 </script>
 <!-- bootstrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
